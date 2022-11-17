@@ -1,0 +1,18 @@
+/* @font-face 
+{
+    font-family: 'Interstate Black Comp';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Interstate Black Comp'), url('interstate-black-comp-58b64117a2ad9.woff') format('woff');
+} */
+
+#header nav
+{
+    background-color: #004d80;
+}
+
+#about h1
+{
+    font-weight: 700;
+    line-height: 1;
+}

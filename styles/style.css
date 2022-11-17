@@ -1,18 +1,14 @@
-/* @font-face 
-{
-    font-family: 'Interstate Black Comp';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Interstate Black Comp'), url('interstate-black-comp-58b64117a2ad9.woff') format('woff');
-} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-#header nav
-{
+body {
+    font-family: 'Roboto';
+}
+
+#header nav {
     background-color: #004d80;
 }
 
-#about h1
-{
+#about h1 {
     font-weight: 700;
     line-height: 1;
 }

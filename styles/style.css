@@ -1,14 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
-#header nav {
-    background-color: #004d80;
+#header {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: #040b14;
+    overflow-y: auto
 }
 
-#about h1 {
-    font-weight: 700;
-    line-height: 1;
+#header img {
+  margin: 15px auto;
+    display: block;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 8px solid #2c2f3f;
+}
+
+#header h3 {
+  text-align: center;
+}
+
+.profile a {
+  color: white;
+  font-size: 18px; /* I know through this that element like a can set font-size that text element (text element boxicon i element here) in it can inherit*/
+  background-color: #212431;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  line-height: 1;
+  display: inline-block; /* this almost finished me, even with style set to box-sizing and width(and height) to 36px, it didn't work (width was taking the exact width of the i elements (that was 18px) but devTool was showing 36px, ridiculous right?) until I added this*/
+  padding: 8px 0;
+  border-radius: 50%;
+  transition: all 0.25s;
+}
+
+.profile a:not(:last-child) {
+  margin-right: 5px;
+}
+
+.profile a:hover {
+  background-color: #37b3ed;
 }

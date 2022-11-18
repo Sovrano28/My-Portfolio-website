@@ -14,10 +14,10 @@ body {
     transition: all 0.5s;
     padding: 0 15px;
     background: #040b14;
-    overflow-y: auto
+    overflow-y: auto;
 }
 
-#header img {
+.profile img {
   margin: 15px auto;
     display: block;
     width: 120px;
@@ -26,7 +26,7 @@ body {
     border: 8px solid #2c2f3f;
 }
 
-#header h3 {
+.profile h3 {
   text-align: center;
 }
 
@@ -50,4 +50,34 @@ body {
 
 .profile a:hover {
   background-color: #37b3ed;
+}
+
+.nav-menu ul {
+  list-style: none;
+}
+
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 15px;
+  color: #a8a9b4;
+}
+
+.nav-menu a i, .nav-menu a:focus i {
+  font-size: 24px;
+  padding-right: 8px;
+  transition: all 0.3s;
+}
+
+.nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover>a i {
+  color: #149ddd; /* love I made these concatenations and multiple selection of selectors especially the > */
+}
+
+.nav-menu a span {
+  transition: all 0.35s;
+}
+
+.nav-menu a:hover span, .nav-menu .active span, .nav-menu .active:focus span, .nav-menu li:hover>a span {
+  color: white;
 }

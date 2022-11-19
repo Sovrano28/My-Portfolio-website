@@ -1,7 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* html {
+  scroll-behavior: smooth;
+} */
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+.mobile-nav-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 9998;
+  background-color: #149ddd;
+  color: white;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  line-height: 0;
+  border-radius: 50%; /* 50px also worked, wow!*/
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header { /* the class I'm toggling is on the body but syle's on header, pretty cool.*/
+  left: 0;
 }
 
 #header {
@@ -117,4 +148,10 @@ body {
 #hero p {
   font-size: 26px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
 }

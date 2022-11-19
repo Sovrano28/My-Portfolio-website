@@ -81,3 +81,10 @@ body {
 .nav-menu a:hover span, .nav-menu .active span, .nav-menu .active:focus span, .nav-menu li:hover>a span {
   color: white;
 }
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../assets/images/hero-bg.jpg") top center;
+  background-size: cover;
+}

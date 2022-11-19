@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/vendors/aos/aos.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/style.css">
   <title>Ayokanmi Adeyemi</title>
 </head>
 
-<body>
+<body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
     <header id="header">
       <div class="d-flex flex-column">
         <div class="profile">
@@ -40,9 +41,14 @@
     </header>
 
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="hero-container aos-init aos-animate" data-aos="fade-in">
+        <h1>Hello</h1>
+        <p>I'm Ayokanmi &#124; <span>Frontend Developer</span></p>
+      </div>
     </section>
 
   <script src="scripts/popper.min.js"></script>
+  <script src="assets/vendors/aos/aos.js"></script>
   <script src="scripts/life.js"></script>
   <script src="scripts/script.js"></script>
 </body>

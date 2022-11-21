@@ -151,8 +151,88 @@ body {
   margin-bottom: 50px;
 }
 
+#main {
+  margin-left: 300px;
+}
+
+#about {
+  padding: 8px;
+}
+
+.section-title.about-me h2 {
+  color: #173b6c;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#about-img {
+  border-radius: 5px;
+}
+
+#main p a {
+  text-decoration: none;
+  color: #149ddd;
+}
+
+.bio h4 {
+  color: #149ddd;
+}
+
+.my-stack h4 {
+  margin-left: 2.5rem;
+}
+
+.my-stack {
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  margin: 0px;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  list-style: disc;
+}
+
+.my-stack li {
+  list-style: none;
+  background: #040b14;
+  color: rgb(255, 255, 255);
+  padding: 0.25rem 0.7rem;
+  margin: 0px 0.25rem 1rem 0px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+/* still coming back to write each stack name under it*/
+
 @media (max-width: 1199px) {
   #header {
     left: -300px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 991px) {
+  #hero {
+    background-attachment: fixed; /* did the magic*/
+  }
+}
+
+@media (max-width: 768px) {
+  #about-img {
+    max-width: 300px;
+  }
+
+  .my-stack h4 {
+    margin-left: 0;
   }
 }

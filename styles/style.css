@@ -159,7 +159,11 @@ body {
   padding: 8px;
 }
 
-.section-title.about-me h2 {
+.section-title {
+  margin-bottom: 0.25rem;
+}
+
+.section-title h2 {
   color: #173b6c;
   font-size: 32px;
   font-weight: bold;
@@ -207,6 +211,14 @@ body {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
+}
+
+.project-position h4 {
+  font-weight: 200;
+}
+
+.project-preview img {
+  border-radius: 35px;
 }
 
 /* still coming back to write each stack name under it*/

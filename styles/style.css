@@ -159,9 +159,9 @@ body {
   padding: 8px;
 }
 
-.section-title {
+/* .section-title {
   margin-bottom: 0.25rem;
-}
+} */
 
 .section-title h2 {
   color: #173b6c;
@@ -213,6 +213,10 @@ body {
   align-items: center;
 }
 
+/* .project-position:not(:first-child) {
+  margin-top: 0.25rem;
+} */
+
 .project-position h4 {
   font-weight: 200;
 }
@@ -221,7 +225,16 @@ body {
   border-radius: 35px;
 }
 
-/* still coming back to write each stack name under it*/
+.purple {
+  color: purple;
+}
+
+/* #galcom-project .project-position h4 {
+  text-align: right;
+  margin-right: 330px;
+} */
+
+/* still coming back to write each stack's name under it*/
 
 @media (max-width: 1199px) {
   #header {
@@ -247,4 +260,8 @@ body {
   .my-stack h4 {
     margin-left: 0;
   }
+
+  /* #galcom-project .project-position h4 {
+    justify-content: left;
+  } */
 }

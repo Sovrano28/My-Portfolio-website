@@ -212,10 +212,7 @@ body {
   -webkit-box-align: center;
   align-items: center;
 }
-
-/* .project-position:not(:first-child) {
-  margin-top: 0.25rem;
-} */
+/* still coming back to write each stack's name under it*/
 
 .project-position h4 {
   font-weight: 200;
@@ -229,13 +226,52 @@ body {
   color: purple;
 }
 
-/* #galcom-project .project-position h4 {
-  text-align: right;
-  margin-right: 330px;
-} */
+.project-preview img {
+  box-shadow: none;
+  transition: all ease-in .5s;
+}
 
-/* still coming back to write each stack's name under it*/
+.project-preview img:hover {
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
 
+.btn-container {
+  margin-top: 40px;
+}
+
+.view-btn {
+  text-decoration: none;
+  width: 150px;
+  height: 75px;
+  font-size: 15px;
+  border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+  transition:all 1s;
+  padding: 10px;
+}
+
+.view-btn:hover {
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+  border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#techat-project .view-btn {
+  background-color: #9e7ab7;
+  color: white;
+}
+
+#galcom-project .view-btn {
+  background-color: #042649;
+  color: #dc8b12;
+}
+
+/*Other screen sizes*/
 @media (max-width: 1199px) {
   #header {
     left: -300px;
@@ -252,6 +288,16 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .btn-container {
+    margin-top: 20px;
+  }
+
+  .project-info {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   #about-img {
     max-width: 300px;
@@ -260,8 +306,4 @@ body {
   .my-stack h4 {
     margin-left: 0;
   }
-
-  /* #galcom-project .project-position h4 {
-    justify-content: left;
-  } */
 }

@@ -102,7 +102,7 @@ body {
 }
 
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover>a i {
-  color: #149ddd; /* love I made these concatenations and multiple selection of selectors especially the > */
+  color: #149ddd; /* love how I made these concatenations and multiple selection of selectors especially the > */
 }
 
 .nav-menu a span {
@@ -271,7 +271,12 @@ body {
   color: #dc8b12;
 }
 
-/*Other screen sizes*/
+#js-stopwatch .view-btn {
+  background-color: #003e99;
+  color: #fff7d0;
+}
+
+/*OTHER SCREEN SIZES!!!*/ 
 @media (max-width: 1199px) {
   #header {
     left: -300px;

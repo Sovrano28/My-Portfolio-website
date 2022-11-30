@@ -165,7 +165,7 @@ body {
 
 .section-title h2 {
   color: #173b6c;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -274,6 +274,10 @@ body {
 #js-stopwatch .view-btn {
   background-color: #003e99;
   color: #fff7d0;
+}
+
+#form-container .row {
+  max-width: 500px;
 }
 
 /*OTHER SCREEN SIZES!!!*/ 

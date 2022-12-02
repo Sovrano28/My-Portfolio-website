@@ -276,8 +276,24 @@ body {
   color: #fff7d0;
 }
 
+#contact .section-title .row {
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .section-title .row h2 {
+  width: fit-content; /*this solution is golden!*/
+}
+
 #form-container .row {
-  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+#the-form {
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
 }
 
 /*OTHER SCREEN SIZES!!!*/ 

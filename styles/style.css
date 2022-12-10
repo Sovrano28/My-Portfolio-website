@@ -31,7 +31,7 @@ body {
   overflow: hidden;
 }
 
-.mobile-nav-active #header { /* the class I'm toggling is on the body but syle's on header, pretty cool.*/
+.mobile-nav-active #header { /* the class I'm toggling is on the body but style's on header, pretty cool.*/
   left: 0;
 }
 
@@ -135,7 +135,7 @@ body {
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width: 300px;
+  min-width: 450px; /** this corrected the 'Hello' collapsing with the varying text*/
   padding: 10px;
 }
 

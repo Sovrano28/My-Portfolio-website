@@ -197,6 +197,10 @@ body {
   list-style: disc;
 }
 
+ul.my-stack {
+  padding-left: none;
+}
+
 .my-stack li {
   list-style: none;
   background: #040b14;

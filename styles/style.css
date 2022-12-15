@@ -336,3 +336,57 @@ ul.my-stack {
     margin-left: 0;
   }
 }
+
+/** ABOUT PAGE*/
+header {
+  background-color: #040b14;
+  color: white;
+}
+
+header .container-fluid {
+  background-color: #040b14;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+header .mobile-nav-toggle {
+  position: fixed;
+  top: 13px;
+  right: 13px;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+}
+
+.internal-nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0 5rem;
+}
+
+.internal-nav-list li {
+  flex-grow: 1;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.internal-nav-list li a {
+  text-decoration: none;
+  color: #149ddd;
+}
+
+@media (width < 768px)  {
+  .internal-nav {
+    display: none;
+  }
+
+  .mobile-nav-active .internal-nav { /*?? Please note this!!!!*/
+    display: block;
+  }
+
+  .internal-nav-list {
+    display: block;
+  }
+}

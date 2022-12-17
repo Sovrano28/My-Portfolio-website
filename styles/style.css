@@ -352,7 +352,7 @@ header .container-fluid {
 }
 
 header .mobile-nav-toggle {
-  position: fixed;
+  position: absolute; /** Wow! (absolute) instead of (fixed) as value this makes the nav-toggle not stick there*/
   top: 13px;
   right: 13px;
   font-size: 18px;
@@ -375,6 +375,20 @@ header .mobile-nav-toggle {
 .internal-nav-list li a {
   text-decoration: none;
   color: #149ddd;
+}
+
+.intro-text {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.text-easy p {
+  font-weight: 350;
+  line-height: 2rem;
+}
+
+.text-margin-left {
+  margin-left: 0.125rem;
 }
 
 @media (width < 768px)  {

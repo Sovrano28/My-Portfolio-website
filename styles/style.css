@@ -5,6 +5,15 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    --blue-1: #149ddd; /*? this is going to make knowing an element easily, will simplify my code and make it more readable*/
+}
+
+a {
+  text-decoration: none;
+}
+
+.my-blue {
+  color: var(--blue-1);
 }
 
 .mobile-nav-toggle {
@@ -12,7 +21,7 @@ body {
   top: 15px;
   right: 15px;
   z-index: 9998;
-  background-color: #149ddd;
+  background-color: var(--blue-1);
   color: white;
   font-size: 24px;
   width: 40px;
@@ -35,6 +44,10 @@ body {
   left: 0;
 }
 
+header {
+  background: #040b14;
+}
+
 #header {
     width: 300px;
     position: fixed;
@@ -44,7 +57,6 @@ body {
     z-index: 9997;
     transition: all 0.5s;
     padding: 0 15px;
-    background: #040b14;
     overflow-y: auto;
 }
 
@@ -65,14 +77,13 @@ body {
   color: white;
   font-size: 18px; /* I know through this that element like a can set font-size that text element (text element boxicon i element here) in it can inherit*/
   background-color: #212431;
-  text-decoration: none;
   width: 36px;
   height: 36px;
   line-height: 1;
   display: inline-block; /* this almost finished me, even with style set to box-sizing and width(and height) to 36px, it didn't work (width was taking the exact width of the i elements (that was 18px) but devTool was showing 36px, ridiculous right?) until I added this*/
   padding: 8px 0;
   border-radius: 50%;
-  transition: all 0.35s;
+  transition: all 0.5s;
 }
 
 .profile a:not(:last-child) {
@@ -81,6 +92,10 @@ body {
 
 .profile a:hover {
   background-color: #37b3ed;
+}
+
+.profile a:focus {
+  opacity: 0.75;
 }
 
 .nav-menu ul {
@@ -102,7 +117,7 @@ body {
 }
 
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover>a i {
-  color: #149ddd; /* love how I made these concatenations and multiple selection of selectors especially the > */
+  color: var(--blue-1); /* love how I made these concatenations and multiple selection of selectors especially the > */
 }
 
 .nav-menu a span {
@@ -174,15 +189,6 @@ body {
   border-radius: 5px;
 }
 
-#main p a {
-  text-decoration: none;
-  color: #149ddd;
-}
-
-.bio h4 {
-  color: #149ddd;
-}
-
 .my-stack h4 {
   margin-left: 2.5rem;
 }
@@ -247,7 +253,6 @@ ul.my-stack {
 }
 
 .view-btn {
-  text-decoration: none;
   width: 150px;
   height: 75px;
   font-size: 15px;
@@ -338,14 +343,11 @@ ul.my-stack {
 }
 
 /** ABOUT PAGE*/
-header {
-  background-color: #040b14;
+.about-page header {
   color: white;
 }
 
 header .container-fluid {
-  background-color: #040b14;
-  color: white;
   font-size: 1rem;
   text-align: center;
   padding: 1rem;
@@ -373,8 +375,7 @@ header .mobile-nav-toggle {
 }
 
 .internal-nav-list li a {
-  text-decoration: none;
-  color: #149ddd;
+  color: var(--blue-1);
 }
 
 .intro-text {

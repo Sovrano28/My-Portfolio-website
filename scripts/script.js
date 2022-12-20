@@ -30,7 +30,7 @@
     this.classList.toggle('bi-x');
   });
 
-  // Frontend developer animation
+  // typed.js animation in the hero-section
   const typed = select('.typed')
   if (typed) {
     let typed_strings = typed.getAttribute('data-typed-items')
@@ -44,7 +44,7 @@
     });
   };
 
-  // aos smooth ease-in on-load function
+  // aos initialisation
   window.addEventListener('load', () => {
     AOS.init({
       duration: 1000,

@@ -185,30 +185,118 @@ header {
   border-radius: 5px;
 }
 
-.my-stack h4 {
-  margin-left: 2.5rem;
+/** Skills*/
+.these-stacks {
+  margin: 0 2.5rem;
 }
 
-.my-stack {
+.each-stack {
+  flex: 1;
+  margin: 0.5rem;
+  height: 60vh;
+  width: 60%;
+  position: relative;
+  transition: flex 0.75s ease-in, background-color 0.75s ease-in; /** see what else I learned today!*/
+}
+
+.each-stack.active {
+  flex: 3;
+}
+
+.stack-content > * {
+  transform: scale(0.1);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+.active .stack-content > * {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+
+.front-dev {
+  /* border: 1px solid #040b14; */
+  padding: 4rem;
+}
+
+.front-dev::before {
+  content: "Click Me";
+
+  display: inline-flex;
+  flex-wrap: wrap; /** I had to add this otherwise align-content (which is for the y-direction) wouldn't work. Chrome devTool gave me this hint and suggested the solution all by itself.*/
+  align-content: center;
+  justify-content: center;
+
+  color: White;
+  background: rgba(5, 13, 24, 1);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: all 0.75s ease-in-out;
+
+  font-size: 1.5rem;
+}
+
+.active.front-dev::before {
+  display: none;
+}
+
+.design {
+  background-image: url('../assets/images/graphic-bg.jpg');
+  
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.design::before {
+  content: "Click Me";
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+
+  position: absolute; /* it didn't show until I added this. wow*/
+  background: #dc8b12;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: all 0.75s ease-in-out;
+
+  font-size: 1.5rem;
+}
+
+.active.design::before {
+  display: none;
+}
+
+.dev-stack {
+  /* border: 1px solid red; */
   display: flex;
   -webkit-box-pack: start;
   justify-content: flex-start;
-  margin: 0px;
+  justify-content: center;
+  padding-left: 0.25rem;
   flex-wrap: wrap;
   white-space: nowrap;
   list-style: disc;
 }
 
-ul.my-stack {
-  padding-left: none;
-}
-
-.my-stack li {
+.dev-stack li {
   background-color: #040b14;
   color: rgb(255, 255, 255);
   padding: 0.25rem 0.7rem;
-  margin: 0px 0.25rem 1rem 0px;
-  font-size: 2rem;
+  /* margin: 0px 0.25rem 1rem 0px; */
+  margin: 1rem;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
   display: flex;
@@ -217,7 +305,19 @@ ul.my-stack {
   -webkit-box-align: center;
   align-items: center;
 }
-/* still coming back to write each stack's name under it*/
+
+.stack-info {
+  visibility: 0;
+  transition: visibility 0.75s ease-in-out 0.5s;
+}
+
+.active .stack-info {
+  position: absolute;
+  z-index: 1;
+  left: 1rem;
+  bottom: 0.5rem;
+  visibility: 1;
+}
 
 .project-position h4 {
   font-weight: 200;
@@ -330,10 +430,6 @@ ul.my-stack {
 @media (max-width: 768px) {
   #about-img {
     max-width: 300px;
-  }
-
-  .my-stack h4 {
-    margin-left: 0;
   }
 }
 

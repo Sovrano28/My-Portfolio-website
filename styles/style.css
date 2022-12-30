@@ -8,6 +8,10 @@ body {
     --blue-1: #149ddd; /*? this is going to make knowing an element easily, will simplify my code and make it more readable*/
 }
 
+section {
+  overflow: hidden; /* this was the s that has been disturbing me for centuries!*/
+}
+
 a {
   text-decoration: none;
 }
@@ -35,7 +39,7 @@ ul {
   justify-content: center;
   border: 0;
   line-height: 0;
-  border-radius: 50%; /* 50px also worked, wow!*/
+  border-radius: 50px; /* 50px also worked, wow!*/
   cursor: pointer;
   transition: all 0.4s;
 }
@@ -129,11 +133,13 @@ header {
 }
 
 #hero {
+  position: relative;   /* this solved that ::before element extending all the way down at width < 768*/
   width: 100%;
   height: 100vh;
   background: url("../assets/images/hero-bg.jpg") center center;
   background-size: cover;
   color: white;
+  padding: 0 4rem;
 }
 
 #hero:before {
@@ -147,11 +153,16 @@ header {
   z-index: 1;
 }
 
+@media (max-width: 767px) {
+  #hero {
+    height: 70vh;
+  }
+}
+
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width: 450px; /** this corrected the 'Hello' collapsing with the varying text*/
-  padding: 10px;
+  min-width: 300px; /** this corrected the 'Hello' collapsing with the varying text*/
 }
 
 #hero h1 {
@@ -163,7 +174,25 @@ header {
 
 #hero p {
   font-size: 26px;
-  margin-bottom: 50px;
+  margin-bottom: 0.25rem;
+}
+
+#hero p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #fff; /* this is for the line*/
+}
+
+@media (max-width: 767px) {
+  #hero h1 {
+    font-size: 2rem;
+    line-height: 1.75rem;
+  }
+  
+  #hero p {
+    font-size: 1rem;
+  }
 }
 
 #main {
@@ -190,13 +219,18 @@ header {
   margin: 0 2.5rem;
 }
 
+/*! coming back to these...*/
 .each-stack {
   flex: 1;
   margin: 0.5rem;
   height: 60vh;
-  width: 60%;
+  width: 100%;
   position: relative;
   transition: flex 0.75s ease-in, background-color 0.75s ease-in; /** see what else I learned today!*/
+}
+
+@media (min-width: 768px) {
+
 }
 
 .each-stack.active {
@@ -221,6 +255,16 @@ header {
   padding: 4rem;
 }
 
+@media (width <= 991px) {
+  .front-dev {
+    padding: 1rem;
+  }
+
+  .dev-stack li {
+    font-size: 10rem;
+  }
+}
+
 .front-dev::before {
   content: "Click Me";
 
@@ -241,6 +285,7 @@ header {
 
   font-size: 1.5rem;
 }
+/*!... to this*/
 
 .active.front-dev::before {
   display: none;
@@ -306,6 +351,13 @@ header {
   align-items: center;
 }
 
+@media (width <= 991px) {
+
+  .dev-stack li {
+    font-size: 2rem;
+  }
+}
+
 .stack-info {
   visibility: 0;
   transition: visibility 0.75s ease-in-out 0.5s;
@@ -314,7 +366,7 @@ header {
 .active .stack-info {
   position: absolute;
   z-index: 1;
-  left: 1rem;
+  left: 2rem;
   bottom: 0.5rem;
   visibility: 1;
 }

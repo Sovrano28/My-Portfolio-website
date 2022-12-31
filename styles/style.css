@@ -250,77 +250,54 @@ header {
   opacity: 1;
 }
 
-.front-dev {
-  /* border: 1px solid #040b14; */
-  padding: 4rem;
-}
-
-@media (width <= 991px) {
-  .front-dev {
-    padding: 1rem;
-  }
-
-  .dev-stack li {
-    font-size: 10rem;
-  }
-}
-
-.front-dev::before {
+.each-stack::before {
   content: "Click Me";
+  font-size: 1.5rem;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 
   display: inline-flex;
   flex-wrap: wrap; /** I had to add this otherwise align-content (which is for the y-direction) wouldn't work. Chrome devTool gave me this hint and suggested the solution all by itself.*/
   align-content: center;
   justify-content: center;
 
-  color: White;
-  background: rgba(5, 13, 24, 1);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
   transition: all 0.75s ease-in-out;
-
-  font-size: 1.5rem;
 }
-/*!... to this*/
 
-.active.front-dev::before {
+.active.each-stack::before {
   display: none;
 }
 
-.design {
-  background-image: url('../assets/images/graphic-bg.jpg');
-  
-  background-size: auto 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+.front-dev::before {
+  color: White;
+  background: rgba(5, 13, 24, 1);
 }
 
 .design::before {
-  content: "Click Me";
-
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-
-  position: absolute; /* it didn't show until I added this. wow*/
   background: #dc8b12;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  transition: all 0.75s ease-in-out;
-
-  font-size: 1.5rem;
 }
 
-.active.design::before {
-  display: none;
+.stack-info {
+  visibility: 0;
+  transition: visibility 0.75s ease-in-out 0.5s;
+}
+
+.active .stack-info {
+  position: absolute;
+  z-index: 1;
+  left: 2rem;
+  bottom: 0.5rem;
+  visibility: 1;
+}
+
+.front-dev {
+  /* border: 1px solid #040b14; */
+  padding: 4rem;
 }
 
 .dev-stack {
@@ -353,22 +330,21 @@ header {
 
 @media (width <= 991px) {
 
+  .front-dev {
+    padding: 1rem;
+  }
+
   .dev-stack li {
     font-size: 2rem;
   }
 }
 
-.stack-info {
-  visibility: 0;
-  transition: visibility 0.75s ease-in-out 0.5s;
-}
-
-.active .stack-info {
-  position: absolute;
-  z-index: 1;
-  left: 2rem;
-  bottom: 0.5rem;
-  visibility: 1;
+.design {
+  background-image: url('../assets/images/graphic-bg.jpg');
+  
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .project-position h4 {

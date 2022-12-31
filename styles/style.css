@@ -505,12 +505,6 @@ header {
   }
 }
 
-@media (max-width: 768px) {
-  #about-img {
-    max-width: 300px;
-  }
-}
-
 /** ABOUT PAGE*/
 .about-page header {
   color: white;

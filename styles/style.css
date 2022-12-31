@@ -317,7 +317,8 @@ header {
   }
   
   .active.each-stack::before {
-    display: none;
+    bottom: calc(100%);
+    content: " ";
   }
   
   .front-dev::before {

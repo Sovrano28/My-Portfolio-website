@@ -227,7 +227,7 @@ header {
   padding: 0 1rem;
 }
 
-.d-flex li {
+.stack-content-grid li {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -265,8 +265,6 @@ header {
   top: calc(100%);
   z-index: 1;
 }
-
-/*! coming back to these...*/
 
 @media (min-width: 991px) {
   .these-stacks {
@@ -385,17 +383,6 @@ header {
     background-repeat: no-repeat;
   }
 }
-
-/* @media (width <= 991px) {
-
-  .front-dev {
-    padding: 1rem;
-  }
-
-  .dev-stack li {
-    font-size: 2rem;
-  }
-} */
 
 .project-position h4 {
   font-weight: 200;

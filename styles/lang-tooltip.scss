@@ -38,11 +38,4 @@ $tooltip-distance: 0.5rem;
       color: $tooltip-text-color-low-sat;
     }
   }
-
-  @media (hover: none) {
-  
-    &::after {
-      content: none;
-    }
-  }
 }

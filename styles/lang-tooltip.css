@@ -22,9 +22,4 @@
 }
 [data-tooltip][aria-description]:hover::after {
   color: #f2f2f2;
-}
-@media (hover: none) {
-  [data-tooltip][aria-description]::after {
-    content: none;
-  }
 }/*# sourceMappingURL=lang-tooltip.css.map */

@@ -30,11 +30,6 @@ $tooltip-distance: 0.5rem;
   &:hover {
     &::after {
       background-color: $tooltip-background-color-low-sat;
-    }
-  }
-
-  &:hover {
-    &::after {
       color: $tooltip-text-color-low-sat;
     }
   }

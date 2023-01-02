@@ -494,7 +494,8 @@ header {
 }
 
 /** ABOUT PAGE*/
-.about-page header {
+.about-page header,
+.techat-review-pg header {
   color: white;
 }
 
@@ -589,6 +590,51 @@ footer ul {
   padding: 0;
 }
 
-.about-page .social-links i {
+.about-page .social-links i,
+.techat-review-pg .social-links i {
   font-size: 1.75rem;
+}
+
+/** Techat page*/
+.live-btn {
+  text-align: center;
+  width: 5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 0.625rem;
+  padding-top: 0.325rem;
+  border-radius: 5px;
+  margin-left: 2rem;
+
+  background-color: hsl(0, 100%, 40%);
+  color: #fff;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+}
+
+.live-btn:hover,
+.live-btn:focus {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.d-flex:has(.live-btn) {
+  align-items: center;
+}
+
+.pro-img-cont {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.live-link {
+  color: #cc0000;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+.live-link:hover,
+.live-link:focus {
+  color: #cc0000;
+  opacity: 0.75;
 }

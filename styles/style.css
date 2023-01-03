@@ -495,7 +495,8 @@ header {
 
 /** ABOUT PAGE*/
 .about-page header,
-.techat-review-pg header {
+.techat-review-pg header,
+.galcom-blocks-review-pg header {
   color: white;
 }
 
@@ -591,11 +592,12 @@ footer ul {
 }
 
 .about-page .social-links i,
-.techat-review-pg .social-links i {
+.techat-review-pg .social-links i,
+.galcom-blocks-review-pg .social-links i {
   font-size: 1.75rem;
 }
 
-/** Techat page*/
+/** Techat & Galcom blocks page*/
 .live-btn {
   text-align: center;
   width: 5rem;

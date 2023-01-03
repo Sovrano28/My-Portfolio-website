@@ -622,6 +622,7 @@ footer ul {
 
 .d-flex:has(.live-btn) {
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .pro-img-cont {

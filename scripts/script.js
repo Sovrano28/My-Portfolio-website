@@ -64,6 +64,28 @@
     onscroll(document, toggleBackToTopBtn);
   };
 
+  /** navbar links active state on scroll.*/
+  let navbarLinks = select('#navbar .scroll_to', true);
+
+  const activeNavbarLink = () => {
+    let position = window.scrollY + 200;
+
+    navbarLinks.forEach(navbarLink => {
+      if (!navbarLink.hash) return;
+
+      let section = select(navbarLink.hash);
+      if (!section) return;
+
+      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+        navbarLink.classList.add('active');
+      } else {
+        navbarLink.classList.remove('active');
+      }
+    });
+  };
+  window.addEventListener('load', activeNavbarLink)
+  onscroll(document, activeNavbarLink);
+
   /*! coming back for this */
   // const mySkillSets = select('.each-stack', true);
 

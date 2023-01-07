@@ -23,6 +23,11 @@
     }
   };
 
+  // Easy on scroll events listener
+  const onscroll = (el, listener) => {
+    el.addEventListener('scroll', listener)
+  }
+
   // mobile-nav icon toggling.
   on('click', '.mobile-nav-toggle', function (e) {
     select('body').classList.toggle('mobile-nav-active');
@@ -42,6 +47,21 @@
       backSpeed: 50,
       backDelay: 2000
     });
+  };
+
+  // unhiding back-to-top-btn
+  const backToTopBtn = select('.back-to-top-btn');
+
+  if (backToTopBtn) {
+    const toggleBackToTopBtn = () => {
+      if (window.scrollY > 100) {
+        backToTopBtn.classList.add('active');
+      } else {
+        backToTopBtn.classList.remove('active');
+      }
+    };
+    window.addEventListener('load', toggleBackToTopBtn);
+    onscroll(document, toggleBackToTopBtn);
   };
 
   // aos initialisation

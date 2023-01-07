@@ -6,6 +6,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     --blue-1: #149ddd; /*? this is going to make knowing an element easily, will simplify my code and make it more readable*/
+    --blue-1-tint: #2dafeb;
 }
 
 section {
@@ -42,6 +43,39 @@ ul {
   border-radius: 50px; /* 50px also worked, wow!*/
   cursor: pointer;
   transition: all 0.4s;
+}
+
+.back-to-top-btn {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 998;
+  background-color: var(--blue-1);
+  color: white;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.back-to-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-toggle:hover,
+.back-to-top-btn:hover {
+  background-color: var(--blue-1-tint);
+  color: #fff;
 }
 
 .mobile-nav-active {
@@ -99,7 +133,7 @@ header {
 }
 
 .profile a:hover {
-  background-color: #37b3ed;
+  background-color: var(--blue-1-tint);
 }
 
 .profile a:focus {

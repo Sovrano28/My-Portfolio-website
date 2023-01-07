@@ -64,6 +64,22 @@
     onscroll(document, toggleBackToTopBtn);
   };
 
+  /*! coming back for this */
+  // const mySkillSets = select('.each-stack', true);
+
+  // const removeActiveClasses = () => {
+  //   mySkillSets.forEach((skillSet) => {
+  //     skillSet.classList.remove('active');
+  //   });
+  // };
+
+  // mySkillSets.forEach((skillSet) => {
+  //   on('click', '.each-stack', () => {
+  //     removeActiveClasses();
+  //     skillSet.classList.add('active');
+  //   }, true)
+  // });
+
   // aos initialisation
   window.addEventListener('load', () => {
     AOS.init({

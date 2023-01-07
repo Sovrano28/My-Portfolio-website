@@ -11,6 +11,5 @@ mySkillSets.forEach((skillSet) => {
   skillSet.addEventListener('click', () => {
     removeActiveClasses();
     skillSet.classList.add('active');
-    
   })
 });

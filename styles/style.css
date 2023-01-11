@@ -552,6 +552,7 @@ header .mobile-nav-toggle {
 .internal-nav-list {
   display: flex;
   padding: 0 5rem;
+  padding-bottom: 1rem;
 }
 
 .internal-nav-list li {
@@ -576,20 +577,6 @@ header .mobile-nav-toggle {
 
 .text-margin-left {
   margin-left: 0.125rem;
-}
-
-@media (width < 768px)  {
-  .internal-nav {
-    display: none;
-  }
-
-  .mobile-nav-active .internal-nav { /*?? Please note this!!!!*/
-    display: block;
-  }
-
-  .internal-nav-list {
-    display: block;
-  }
 }
 
 /** FOOTER Section*/

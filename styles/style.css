@@ -553,6 +553,13 @@ header .mobile-nav-toggle {
   display: flex;
   padding: 0 5rem;
   padding-bottom: 1rem;
+  margin: 0;
+}
+
+@media (min-width: 767px) {
+  .internal-nav.collapse {
+    display: block;
+  }
 }
 
 .internal-nav-list li {

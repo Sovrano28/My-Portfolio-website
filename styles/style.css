@@ -32,7 +32,7 @@ ul {
   z-index: 9998;
   background-color: var(--blue-1);
   color: white;
-  font-size: 24px;
+  font-size: 2rem;
   width: 40px;
   height: 40px;
   display: inline-flex;
@@ -187,12 +187,6 @@ header {
   z-index: 1;
 }
 
-@media (max-width: 767px) {
-  #hero {
-    height: 70vh;
-  }
-}
-
 #hero .hero-container {
   position: relative;
   z-index: 2;
@@ -200,14 +194,14 @@ header {
 }
 
 #hero h1 {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 56px;
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
 }
 
 #hero p {
-  font-size: 26px;
+  font-size: 1.5rem;
   margin-bottom: 0.25rem;
 }
 
@@ -220,12 +214,12 @@ header {
 
 @media (max-width: 767px) {
   #hero h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 1.75rem;
   }
   
   #hero p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -234,12 +228,12 @@ header {
 }
 
 #about {
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 .section-title h2 {
   color: #173b6c;
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -450,11 +444,11 @@ header {
 .view-btn {
   width: 150px;
   height: 75px;
-  font-size: 15px;
+  font-size: 1rem;
   border-top-right-radius: 10px;
 	border-bottom-left-radius: 10px;
   transition:all 1s;
-  padding: 10px;
+  padding: 0.625em;
 }
 
 .view-btn:hover {

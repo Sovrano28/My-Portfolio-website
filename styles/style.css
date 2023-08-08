@@ -291,7 +291,7 @@ header {
   z-index: 1;
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   .these-stacks {
     margin: 0 2.5rem;
   }
@@ -502,7 +502,7 @@ header {
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   #hero {
     background-attachment: fixed; /* did the magic*/
   }

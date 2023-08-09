@@ -1,0 +1,26 @@
+{
+  "name": "my-portfolio-website",
+  "version": "1.0.0",
+  "description": "A glimpse of what Sovrano28 can do.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "postcss dev/input.css -o styles/style.css",
+    "watch-css": "postcss dev/input.css -o styles/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sovrano28/My-Portfolio-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sovrano28/My-Portfolio-website/issues"
+  },
+  "homepage": "https://github.com/Sovrano28/My-Portfolio-website#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0"
+  }
+}

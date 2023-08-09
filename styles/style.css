@@ -104,7 +104,8 @@ header {
     display: block;
     width: 120px;
     height: 120px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border: 8px solid #2c2f3f;
 }
 
@@ -376,8 +377,6 @@ header {
   .dev-stack {
     /* border: 1px solid red; */
     display: flex;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
     justify-content: center;
     padding-left: 0.25rem;
     flex-wrap: wrap;
@@ -395,9 +394,7 @@ header {
     font-weight: 700;
     text-align: center;
     display: flex;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
     align-items: center;
   }
 
@@ -429,9 +426,7 @@ header {
 
 .project-preview img:hover {
   box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
-  -webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .btn-container {
@@ -477,6 +472,7 @@ header {
 }
 
 #contact .section-title .row h2 {
+  width: -moz-fit-content;
   width: fit-content; /*this solution is golden!*/
 }
 

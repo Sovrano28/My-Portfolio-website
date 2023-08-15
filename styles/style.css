@@ -210,17 +210,6 @@ header {
   border-bottom: 1px solid #fff; /* this is for the line*/
 }
 
-@media (max-width: 767px) {
-  #hero h1 {
-    font-size: 3rem;
-    line-height: 1.75rem;
-  }
-  
-  #hero p {
-    font-size: 1.5rem;
-  }
-}
-
 #main {
   margin-left: 300px;
 }
@@ -292,7 +281,232 @@ header {
   z-index: 1;
 }
 
-@media (min-width: 992px) {
+.project-position h4 {
+  font-weight: 200;
+}
+
+.project-preview img {
+  border-radius: 35px;
+}
+
+.purple {
+  color: purple;
+}
+
+.project-preview img {
+  box-shadow: none;
+  transition: all ease-in .5s;
+}
+
+.project-preview img:hover {
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.btn-container {
+  margin-top: 40px;
+}
+
+.view-btn {
+  width: 150px;
+  height: 75px;
+  font-size: 1rem;
+  border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+  transition:all 1s;
+  padding: 0.625em;
+}
+
+.view-btn:hover {
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+  border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#techat-project .view-btn {
+  background-color: #9e7ab7;
+  color: white;
+}
+
+#galcom-project .view-btn {
+  background-color: #042649;
+  color: #dc8b12;
+}
+
+#js-stopwatch .view-btn {
+  background-color: #003e99;
+  color: #fff7d0;
+}
+
+#contact .section-title .row {
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .section-title .row h2 {
+  width: -moz-fit-content;
+  width: fit-content; /*this solution is golden!*/
+}
+
+#form-container .row {
+  justify-content: center;
+  align-items: center;
+}
+
+#the-form {
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+}
+
+/** OTHER SCREEN SIZES!!!*/
+
+/** ABOUT PAGE*/
+.about-page header,
+.techat-review-pg header,
+.galcom-blocks-review-pg header {
+  color: white;
+}
+
+header .container-fluid {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+header .mobile-nav-toggle {
+  position: absolute; /** Wow! (absolute) instead of (fixed) as value this makes the nav-toggle not stick there*/
+  top: 13px;
+  right: 13px;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+}
+
+.internal-nav-list {
+  display: flex;
+  padding: 0 5rem;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.internal-nav-list li {
+  flex-grow: 1;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.internal-nav-list li a {
+  color: var(--blue-1);
+}
+
+.intro-text {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.text-easy p {
+  font-weight: 350;
+  line-height: 2rem;
+}
+
+.text-margin-left {
+  margin-left: 0.125rem;
+}
+
+/** FOOTER Section*/
+.footer { /*using the element tag couldn't overwrite the*/
+  /* background-color: #173b6c; */
+  background-color: #040b14;
+  color: white;
+}
+
+.footer h3 {
+  color: var(--blue-1);
+  font-size: 1.5rem;
+}
+
+.footer h5 {
+  color: #a8a9b4;
+}
+
+footer a {
+  color: white;
+  transition: all 0.45s ease-in-out;
+}
+
+footer a:hover {
+  color: var(--blue-1);
+}
+
+footer a:focus {
+  opacity: 0.75;
+}
+
+footer ul {
+  padding: 0;
+}
+
+.about-page .social-links i,
+.techat-review-pg .social-links i,
+.galcom-blocks-review-pg .social-links i {
+  font-size: 1.75rem;
+}
+
+/** Techat & Galcom blocks page*/
+.live-btn {
+  text-align: center;
+  width: 5rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 0.625rem;
+  padding-top: 0.325rem;
+  border-radius: 5px;
+  margin-left: 2rem;
+
+  background-color: hsl(0, 100%, 40%);
+  color: #fff;
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+}
+
+.live-btn:hover,
+.live-btn:focus {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.d-flex:has(.live-btn) {
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pro-img-cont {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.live-link {
+  color: #cc0000;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+.live-link:hover,
+.live-link:focus {
+  color: #cc0000;
+  opacity: 0.75;
+}
+
+@media (min-width: 767px){
+  .internal-nav.collapse {
+    display: block;
+  }
+}
+
+@media (min-width: 992px){
   .these-stacks {
     margin: 0 2.5rem;
   }
@@ -405,90 +619,12 @@ header {
     background-position: center;
     background-repeat: no-repeat;
   }
+  #hero {
+    background-attachment: fixed; /* did the magic*/
+  }
 }
 
-.project-position h4 {
-  font-weight: 200;
-}
-
-.project-preview img {
-  border-radius: 35px;
-}
-
-.purple {
-  color: purple;
-}
-
-.project-preview img {
-  box-shadow: none;
-  transition: all ease-in .5s;
-}
-
-.project-preview img:hover {
-  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
-  transform: scale(1.02);
-}
-
-.btn-container {
-  margin-top: 40px;
-}
-
-.view-btn {
-  width: 150px;
-  height: 75px;
-  font-size: 1rem;
-  border-top-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-  transition:all 1s;
-  padding: 0.625em;
-}
-
-.view-btn:hover {
-  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
-  border-top-right-radius: 0;
-	border-bottom-left-radius: 0;
-  border-top-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-}
-
-#techat-project .view-btn {
-  background-color: #9e7ab7;
-  color: white;
-}
-
-#galcom-project .view-btn {
-  background-color: #042649;
-  color: #dc8b12;
-}
-
-#js-stopwatch .view-btn {
-  background-color: #003e99;
-  color: #fff7d0;
-}
-
-#contact .section-title .row {
-  justify-content: center;
-  align-items: center;
-}
-
-#contact .section-title .row h2 {
-  width: -moz-fit-content;
-  width: fit-content; /*this solution is golden!*/
-}
-
-#form-container .row {
-  justify-content: center;
-  align-items: center;
-}
-
-#the-form {
-  max-width: 600px;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
-}
-
-/** OTHER SCREEN SIZES!!!*/ 
-@media (max-width: 1199px) {
+@media (max-width: 1199px){
   #header {
     left: -300px;
   }
@@ -498,13 +634,7 @@ header {
   }
 }
 
-@media (min-width: 992px) {
-  #hero {
-    background-attachment: fixed; /* did the magic*/
-  }
-}
-
-@media (max-width: 992px) {
+@media (max-width: 992px){
   .btn-container {
     margin-top: 20px;
   }
@@ -514,145 +644,13 @@ header {
   }
 }
 
-/** ABOUT PAGE*/
-.about-page header,
-.techat-review-pg header,
-.galcom-blocks-review-pg header {
-  color: white;
-}
-
-header .container-fluid {
-  font-size: 1rem;
-  text-align: center;
-  padding: 1rem;
-}
-
-header .mobile-nav-toggle {
-  position: absolute; /** Wow! (absolute) instead of (fixed) as value this makes the nav-toggle not stick there*/
-  top: 13px;
-  right: 13px;
-  font-size: 18px;
-  width: 30px;
-  height: 30px;
-}
-
-.internal-nav-list {
-  display: flex;
-  padding: 0 5rem;
-  padding-bottom: 1rem;
-  margin: 0;
-}
-
-@media (min-width: 767px) {
-  .internal-nav.collapse {
-    display: block;
+@media (max-width: 767px){
+  #hero h1 {
+    font-size: 3rem;
+    line-height: 1.75rem;
   }
-}
-
-.internal-nav-list li {
-  flex-grow: 1;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.internal-nav-list li a {
-  color: var(--blue-1);
-}
-
-.intro-text {
-  font-size: 4rem;
-  font-weight: 400;
-}
-
-.text-easy p {
-  font-weight: 350;
-  line-height: 2rem;
-}
-
-.text-margin-left {
-  margin-left: 0.125rem;
-}
-
-/** FOOTER Section*/
-.footer { /*using the element tag couldn't overwrite the*/
-  /* background-color: #173b6c; */
-  background-color: #040b14;
-  color: white;
-}
-
-.footer h3 {
-  color: var(--blue-1);
-  font-size: 1.5rem;
-}
-
-.footer h5 {
-  color: #a8a9b4;
-}
-
-footer a {
-  color: white;
-  transition: all 0.45s ease-in-out;
-}
-
-footer a:hover {
-  color: var(--blue-1);
-}
-
-footer a:focus {
-  opacity: 0.75;
-}
-
-footer ul {
-  padding: 0;
-}
-
-.about-page .social-links i,
-.techat-review-pg .social-links i,
-.galcom-blocks-review-pg .social-links i {
-  font-size: 1.75rem;
-}
-
-/** Techat & Galcom blocks page*/
-.live-btn {
-  text-align: center;
-  width: 5rem;
-  height: 2rem;
-  font-size: 1rem;
-  padding: 0.5rem 0.625rem;
-  padding-top: 0.325rem;
-  border-radius: 5px;
-  margin-left: 2rem;
-
-  background-color: hsl(0, 100%, 40%);
-  color: #fff;
-  transform: scale(1);
-  transition: all 0.5s ease-out;
-}
-
-.live-btn:hover,
-.live-btn:focus {
-  color: #fff;
-  transform: scale(1.05);
-}
-
-.d-flex:has(.live-btn) {
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.pro-img-cont {
-  width: 65%;
-  margin: 0 auto;
-}
-
-.live-link {
-  color: #cc0000;
-  opacity: 1;
-  transition: all 0.5s ease-in;
-}
-
-.live-link:hover,
-.live-link:focus {
-  color: #cc0000;
-  opacity: 0.75;
+  
+  #hero p {
+    font-size: 1.5rem;
+  }
 }

@@ -325,6 +325,11 @@ header {
 	border-bottom-right-radius: 10px;
 }
 
+#whatsapp-ui-project .view-btn {
+  background-color: #128c7e;
+  color: #fff;
+}
+
 #techat-project .view-btn {
   background-color: #9e7ab7;
   color: white;

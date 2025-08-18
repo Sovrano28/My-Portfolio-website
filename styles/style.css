@@ -325,6 +325,13 @@ header {
 	border-bottom-right-radius: 10px;
 }
 
+#fruit-order-app .view-btn {
+  background-color: #2ecc71;
+  color: #fff;
+  /* color: #1e8449; */
+  /* background-color: #2ecc71; */
+}
+
 #whatsapp-ui-project .view-btn {
   background-color: #128c7e;
   color: #fff;
@@ -333,6 +340,7 @@ header {
 #techat-project .view-btn {
   background-color: #9e7ab7;
   color: white;
+  /* color: purple; */
 }
 
 #galcom-project .view-btn {

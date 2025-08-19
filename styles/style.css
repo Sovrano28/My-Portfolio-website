@@ -501,6 +501,12 @@ footer ul {
   margin: 0 auto;
 }
 
+@media (max-width: 991px) {
+  .fruit-order-app-review-pg .pro-img-cont {
+    width: 85%;
+  }
+}
+
 .live-link {
   color: #cc0000;
   opacity: 1;
